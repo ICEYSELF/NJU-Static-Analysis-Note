@@ -1,0 +1,16 @@
+digraph ast {
+    "do-while" -> body;
+    "do-while" -> ">";
+    body -> assign;
+    assign -> i;
+    assign -> "+";
+    "+" -> i2;
+    "+" -> "1";
+    ">" -> "[]";
+    ">" -> v;
+    "[]" -> a;
+    "[]" -> i3;
+
+    i2 [label="i"];
+    i3 [label="i"];
+}
